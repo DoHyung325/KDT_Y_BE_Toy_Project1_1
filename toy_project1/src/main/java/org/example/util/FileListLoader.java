@@ -74,8 +74,6 @@ public class FileListLoader {
                 }
                 return fileName1.compareTo(fileName2);
             });
-
-
         }
         Pattern patternForExtractedNumber = Pattern.compile("\\d+"); // TODO: magic number
 

@@ -90,7 +90,13 @@ public class Controller {
         } else {
             trips = searchTripService.getTripsAs(".csv"); // TODO: magic number
         }
+
+        if(trips.isEmpty()){
+            return;
+        }
+
         viewer.printTripsNameAndId(trips);
+
 
         int selectedTripId;
         while (true) {
